@@ -33,7 +33,7 @@ services:
     depends_on:
       - reloader
     environment:
-      NGINX_PROXY_CONTAINER: gusta-proxy-proxy
+      NGINX_PROXY_CONTAINER: gusta-proxy
       NGINX_DOCKER_GEN_CONTAINER: gusta-proxy-reloader
     volumes:
       - conf:/etc/nginx/conf.d
